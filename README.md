@@ -11,6 +11,8 @@ fonksiyonun eklenmesi için **issue** açabilirsiniz.
 ## Hızlı Bakış
  * [Kurulum](#kurulum)
  * [Kullanım](#kullanım)
+ * [Tüm Ürünleri Getir](#kullanım)
+ * [Ürün Detay](#ürün)
 
  
  ## Kurulum
@@ -23,16 +25,11 @@ composer install
 
 ```
 
-## Kullanım
+## Kullanım (Tüm Ürünleri Çekmek İçin)
 
 ```php
-
-
-
 include "Trendyol.php";
 $trendyol = new Trendyol();
-
-
 /*
  * https://www.trendyol.com/erkek-atlet-x-g2-c1004
  * Yukarıda belirtilen url https://www.trendyol.com/ haric geri kalanını ilgili
@@ -49,16 +46,18 @@ print_r($trendyol->infinite_scroll("erkek-atlet-x-g2-c1004"));
  * 
  * /
 print_r($trendyol->infinite_scrolls("erkek-atlet-x-g2-c1004"));
-
-
-/*
- * İlgili ürün hakkında tüm bilgileri alabilirsiniz.
- * id - merchantId - campaignId
- */
- print_r($trendyol->product_detail("43374789","108658","61"));
- 
 echo "</pre>";
+```
 
+## Ürün Detay 
+
+```php
+include "Trendyol.php";
+$trendyol = new Trendyol();
+
+echo "<pre>";
+print_r($trendyol->product_detail("43374789","108658","61"));
+echo "</pre>";
 ```
 
 ## Örnek Çıktı
