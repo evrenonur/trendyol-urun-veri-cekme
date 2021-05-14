@@ -53,6 +53,7 @@ echo "</pre>";
 
 ```
 
+## Örnek Çıktı
 ```text
 
 
