@@ -49,6 +49,14 @@ print_r($trendyol->infinite_scroll("erkek-atlet-x-g2-c1004"));
  * 
  * /
 print_r($trendyol->infinite_scrolls("erkek-atlet-x-g2-c1004"));
+
+
+/*
+ * İlgili ürün hakkında tüm bilgileri alabilirsiniz.
+ * id - merchantId - campaignId
+ */
+ print_r($trendyol->product_detail("43374789","108658","61"));
+ 
 echo "</pre>";
 
 ```
