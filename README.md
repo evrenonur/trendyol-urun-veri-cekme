@@ -12,7 +12,7 @@ fonksiyonun eklenmesi için **issue** açabilirsiniz.
  * [Kurulum](#kurulum)
  * [Kullanım](#kullanım)
  * [Tüm Ürünleri Getir](#kullanım)
- * [Ürün Detay](#ürün)
+ * [Ürün Detay](#detay)
 
  
  ## Kurulum
@@ -49,12 +49,12 @@ print_r($trendyol->infinite_scrolls("erkek-atlet-x-g2-c1004"));
 echo "</pre>";
 ```
 
-## Ürün Detay 
+## Detay 
 
 ```php
 include "Trendyol.php";
 $trendyol = new Trendyol();
-
+/*$id,$merchantId,$campaignId*/
 echo "<pre>";
 print_r($trendyol->product_detail("43374789","108658","61"));
 echo "</pre>";
